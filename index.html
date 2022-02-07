@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+	<title>JavaScript testing</title>
+	<script src="new1.js"></script>
+	<style>
+		* {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		input#name {
+			background-color: lightblue;
+			font-size: 2em;
+			border: 3px solid black;
+			margin-bottom: 10px;
+		}
+		
+		button {
+			width: 300px;
+		}
+	</style>
+	<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+	<a href="reverse.html">Reverse page here</a>
+		<h1>Type Something here and it will show the number of vowels in it</h1>
+		<input maxlength=50 id="name" placeholder="type here"></input>
+		<br />
+		<button onclick="enter()">Enter</button>
+		<div id="main" style="display: none;">
+			<h3>The sentence you typed has: </h3>
+			<h3><span id="number"></span> vowel<span id="letterS">s</span> <span id="wordAnd">and</span></h3>
+			<h3 id="headd">The vowel<span id="sAre">s are</span>: <span id="vowels"></span></h3>
+		</div>
+	</body>
+</html>
