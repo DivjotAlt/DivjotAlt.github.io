@@ -1,17 +1,3 @@
-function longer(a, b) {
-	if (a.length > b.length) {
-		return a;
-	} else {
-		return b;
-	};
-};
-console.log(longer("significant", "short"));
-
-function changeContent(content) {
-	document.getElementById("content").innerHTML = content;
-	document.getElementById("iframe").style.display = "none";
-};
-
 function enter() {
 	var input = document.getElementById("name").value;
 	console.log(input);	
@@ -47,15 +33,21 @@ function enter() {
 	document.getElementById("number").textContent = noOfVowels;
 	document.getElementById("vowels").textContent = total;
 	document.getElementById("main").style = "display: block;"
-	document.querySelector("#headd").style = "display: block;";
+	document.querySelector("#wordAnd").style = "display: inline;"
+	document.querySelector("#headd").style = "display: inline;"
 	document.querySelector("#letterS").style = "display: inline;";
-	document.querySelector("#wordAnd").style = "display:inline;";
-	document.querySelector("#sAnd").textContent = "s are";
+	document.querySelector("#sAre").textContent = "s are";
+	// document.querySelector("#headd").style = "display: block;";
+	// document.querySelector("#letterS").style = "display: inline;";
+	// document.querySelector("#wordAnd").style = "display:inline;";
+	// document.querySelector("#sAnd").innerHTML = "s are";
 	if (noOfVowels === 0) {
+		console.log("0 vowels detected");
+		document.querySelector("#wordAnd").style = "display: none;";
 		document.querySelector("#headd").style = "display: none;";
-		document.querySelector("#wordAre").style = "display:none";
 	};
 	if (noOfVowels === 1) {
+		console.log("1 vowel detected");
 		document.querySelector("#letterS").style = "display: none;";
 		document.querySelector("#sAre").textContent = " is";
 	};
