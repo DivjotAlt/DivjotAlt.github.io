@@ -82,7 +82,7 @@ function enterReverse(string) {
 	reversedWord = [];
 };
 
-function gotToReverse() {
+function goToReverse() {
 	window.open("https://divjotalt.github.io/reverse", "_self");
 };
 
