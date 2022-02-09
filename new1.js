@@ -81,3 +81,12 @@ function enterReverse(string) {
 	document.querySelector("h3").style = "display: block;"
 	reversedWord = [];
 };
+
+function gotToReverse() {
+	window.open("https://divjotalt.github.io/reverse", "_self");
+};
+
+function goToVowels() {
+	window.open("https://divjotalt.github.io/vowels", "_self");
+};
+	
