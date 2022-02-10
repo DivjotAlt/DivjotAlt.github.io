@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>JavaScript testing</title>
+		<script src="../new1.js"></script>
+		<style>
+			* {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			input#name {
+				background-color: lightblue;
+				font-size: 2em;
+				border: 3px solid black;
+				margin-bottom: 10px;
+			}
+			
+			button {
+				width: 300px;
+			}
+			
+			h3 {
+				display: none;
+			}
+		</style>
+		<link rel="stylesheet" href="../styles.css">
+	</head>
+	<body>
+		<a href="../">Back to list</a>
+			<h1>Type Something here and it will tell you the length of it</h1>
+			<input maxlength=50 id="name" placeholder="type here"></input>
+			<br />
+			<button onclick="runLengthOfString()">Enter</button>
+			<div id="content">
+				<h3>The length of the string is <span id="theNumber"></span></h3>
+			</div>
+	</body>
+</html>

@@ -34,7 +34,7 @@ function enter() {
 	document.getElementById("vowels").textContent = total;
 	document.getElementById("main").style = "display: block;"
 	document.querySelector("#wordAnd").style = "display: inline;"
-	document.querySelector("#headd").style = "display: block;"
+	document.querySelector("#headd").style = "display: inline;"
 	document.querySelector("#letterS").style = "display: inline;";
 	document.querySelector("#sAre").textContent = "s are";
 	// document.querySelector("#headd").style = "display: block;";
@@ -80,4 +80,23 @@ function enterReverse(string) {
 	document.querySelector("#theText").innerHTML = reversedWord;
 	document.querySelector("h3").style = "display: block;"
 	reversedWord = [];
+};
+
+function goToReverse() {
+	window.open("https://divjotalt.github.io/reverse", "_self");
+};
+
+function goToVowels() {
+	window.open("https://divjotalt.github.io/vowels", "_self");
+};
+
+function lengthOfString(string) {
+	let num = 0;
+	for (var element of string) {
+		num++;
+		if (element === " ") {
+			num--;
+		};
+	};
+	return num;
 };

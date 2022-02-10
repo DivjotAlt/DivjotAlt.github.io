@@ -89,4 +89,29 @@ function goToReverse() {
 function goToVowels() {
 	window.open("https://divjotalt.github.io/vowels", "_self");
 };
-	
+
+function lengthOfString(string) {
+	let num = 0;
+	for (var element of string) {
+		num++;
+		if (element === " ") {
+			num--;
+		};
+	};
+	return num;
+};
+
+function runLengthOfString() {
+	var input = document.querySelector("#name").value;
+	console.log(input);
+	let num = 0;
+	for (var element of input) {
+		num++;
+		if (element === " ") {
+			num--;
+		};
+	};
+	document.querySelector("#theNumber").innerHTML = num;
+	document.querySelector("#content").style = "display: block;"
+	document.querySelector("h3").style = "display: block;"
+};
