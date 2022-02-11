@@ -1,3 +1,5 @@
+console.log("JavaScript file found at the root directory")
+
 function enter() {
 	var input = document.getElementById("name").value;
 	console.log(input);	
@@ -113,5 +115,21 @@ function runLengthOfString() {
 	};
 	document.querySelector("#theNumber").innerHTML = num;
 	document.querySelector("#content").style = "display: block;"
+	document.querySelector("h3").style = "display: block;"
+};
+
+function highlight() {
+	let sentence = document.getElementById("sentence").value;
+	let find = document.getElementById("find").value;
+	let index = sentence.indexOf(find);
+	let myArray = sentence.split("");
+	console.log(sentence[index]);
+	let indexFound = myArray[index];
+	myArray[index] = "<span id='jsresult'>"+indexFound+"</span>";
+	indexFound = myArray[index];
+	console.log(indexFound);
+	myArray = myArray.toString();
+	myArray = myArray.replace(/,/g, "");
+	document.getElementById("theText").innerHTML = myArray;
 	document.querySelector("h3").style = "display: block;"
 };
