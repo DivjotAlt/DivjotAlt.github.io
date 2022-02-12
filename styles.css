@@ -22,6 +22,6 @@ a:active {
   text-align: center;
 }
 
-#jsresult {
+.jsresult {
 	background-color: lightgrey;
 }

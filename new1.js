@@ -125,7 +125,7 @@ function highlight() {
 	let myArray = sentence.split("");
 	console.log(sentence[index]);
 	let indexFound = myArray[index];
-	myArray[index] = "<span id='jsresult'>"+indexFound+"</span>";
+	myArray[index] = "<span class='jsresult'>"+indexFound+"</span>";
 	indexFound = myArray[index];
 	console.log(indexFound);
 	myArray = myArray.toString();
