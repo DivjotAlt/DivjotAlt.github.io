@@ -6,25 +6,7 @@ function enter() {
 	let noOfVowels = 0;
 	let total = "";
 	for (var element of input) {
-		if (element == "a" || 
-			(element == "e" || 
-				(element == "i" || 
-					(element == "o" || 
-						(element == "u" || 
-							(element == "A" || 
-								(element == "E" || 
-									(element =="I" || 
-										(element == "O" || 
-											(element == "U")
-										)
-									)
-								)
-							)
-						)
-					)
-				)
-			)
-		) {
+		if (element == "a" || element == "e" || element == "i" || element == "o" || element == "u" || element == "A" || element == "E" || element =="I" || element == "O" || element == "U") {
 			noOfVowels++;
 			total += element + ", ";
 		};
@@ -133,3 +115,17 @@ function highlight() {
 	document.getElementById("theText").innerHTML = myArray;
 	document.querySelector("h3").style = "display: block;"
 };
+
+function lowercase() {
+	let text = document.getElementById("name").value;
+	let lowercaseText = text.toLowerCase();
+	document.querySelector("h3").style = "display: block";
+	document.getElementById("text").innerHTML = lowercaseText;
+};
+
+function uppercase() {
+	let text = document.getElementById("name").value;
+	let uppercaseText = text.toUpperCase();
+	document.querySelector("h3").style = "display: block";
+	document.getElementById("text").innerHTML = uppercaseText;
+}
