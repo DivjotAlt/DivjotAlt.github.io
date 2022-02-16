@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" src="./styles.css" />
+    <title>Events</title>
+</head>
+<body>
+    <a href="./">Back to list</a>
+    <h1>Click anywhere to show the y and x position of your mouse</h1>
+    <button id="btn">Don't Click me</button>
+    <br />
+    <h2></h2>
+    <br />
+    <h2></h2>
+    <br />
+    <h2></h2>
+    <script defer>
+        (function () {
+            document.querySelector('h2').innerHTML = `The height of your window is ${window.innerHeight} and the width is ${window.innerWidth}`;
+            document.getElementById('btn').addEventListener('click', function () {
+                alert("Why did you press me >:(");
+                window.close();
+            });
+            window.addEventListener('resize', function () {
+                document.querySelector('h2').innerHTML = `The height of your window is ${window.innerHeight} and the width is ${window.innerWidth}`;
+            });
+            document.addEventListener('keydown', function (event) {
+                document.querySelectorAll('h2')[1].innerHTML = `The key that you last pressed was ${event.key}`;
+            })
+            let delay = 100;
+            document.addEventListener('click', function (event) { document.querySelectorAll('h2')[2].innerHTML = `You are at y=${event.clientY} x=${event.clientX}` });
+            window.clientY = 100;
+            window.clientX = 100;
+        })();
+    </script>
+</body>
+</html>
