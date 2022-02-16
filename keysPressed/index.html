@@ -27,7 +27,7 @@
         alert("Press a key(delete to delete it)");
         var text = document.getElementById('text');
         document.addEventListener('keydown', function (event) {
-            text.innerHTML += `"${event.key}", `;
+            text.innerHTML += `${event.key}, `;
             if (event.key == "Delete") {
                 text.innerHTML = ``;
             };
