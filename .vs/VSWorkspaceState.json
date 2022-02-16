@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\keysPressed",
     "\\uppercase"
   ],
-  "SelectedNode": "\\new1.js",
+  "SelectedNode": "\\keysPressed\\index.html",
   "PreviewInSolutionExplorer": false
 }
