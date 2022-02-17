@@ -32,7 +32,7 @@ function swapImage() {
     newSlide.className = "fadeinimg";
     container.appendChild(newSlide);
 
-    if (container.children.length > 2) {
+    if (container.children.length > 1) {
         container.children[0].style.display = "none";
         container.removeChild(container.children[0]);
     }
