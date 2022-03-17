@@ -1,49 +1,27 @@
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
 * {
-    background-color: #f0c8c8;
+  text-align: center;
 }
 
-#heading {
-    text-align: center;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-input#firstNum, input#secondNum {
-    width: 250px;
-    height: 30px;
-    text-align: center;
-}
-
-div#first, div#second, div#options, div#submit, div#answerContainer {
-    position: absolute;
-}
-
-#contain {
-    position: relative;
-}
-
-#first{
-    top: 100px;
-    left: 500px;
-}
-
-#second{
-    top: 100px;
-    right: 500px;
-}
-
-#options{
-    top: 75px;
-    left: 48%;
-}
-
-#submit{
-    top: 200px;
-    left: 48%;
-}
-
-#answerContainer {
-    left: 40%;
+.jsresult {
+	background-color: lightgrey;
 }
