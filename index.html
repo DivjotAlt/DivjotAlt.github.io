@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>JavaScript</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-	<meta name="viewport" content="initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Calculator</title>
     <style>
-      ul {
-        display: inline-block;
-        text-align: left;
-      }
-      
-      div {
-       text-align: center; 
-      }
-	  
-	  #first, #second, #third {
-		color: blue
-	  }
+        * {
+            background-color: #f0c8c8;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        input#firstNum, input#secondNum {
+            width: 200px;
+            height: 30px;
+        }
+
+        div#first, div#second, div#options, div#submit {
+            position: absolute;
+        }
+
+        #contain {
+            position: relative;
+        }
+
+        #first{
+            top: 150px;
+            left: 500px;
+        }
+
+        #second{
+            top: 150px;
+            right: 500px;
+        }
+
+        #options{
+            top: 125px;
+            left: 48%;
+        }
+
+        #submit{
+            top: 250px;
+            left: 48%;
+        }
+
+        #answerContainer {
+            top: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
     </style>
-  </head>
-  <body>i
-    <h1 id="first">Welcome to my website!</h1>
-    <h2 id="second">I will put all of my webpage projects in here</h2>
-	<h2 id="third">Click one to go there</h2>
-    <div>
-     <ul id="list">
-        <li><a href="./vowels">Number of Vowels</a></li>
-        <li><a href="./reverse">Reverse</a></li>
-		<li><a href="./length">Length</a></li>
-		<li><a href="./highlight">Highlight letter</a></li>
-		<li><a href="./input">Experiments with input</a></li>
-        <li><a href="./uppercase">Uppercase</a></li>
-        <li><a href="./lowercase">Lowercase</a></li>
-        <li><a href="./keysPressed">Keys Pressed</a></li>
-        <li><a href="./memes">Memes slideshow</a></li>
-        <li><a href="./events">Experiments with events</a></li>
-      </ul>
+</head>
+<body>
+    <h1 id="heading">Calculator</h1>
+    <div id="contain">
+        <form id="form">
+            <div id="first">
+                <input type="number" id="firstNum">
+            </div>
+            <br />
+            <div id="options">
+                <input type="radio" id="add" name="operation" value="Add">
+                <label for="add">Add</label><br>
+                <input type="radio" id="subtract" name="operation" value="Subtract">
+                <label for="subtract">Subtract</label><br>
+                <input type="radio" id="multiply" name="operation" value="Multiply">
+                <label for="multiply">Multiply</label><br>
+                <input type="radio" id="divide" name="operation" value="Divide">
+                <label for="divide">Divide</label>
+            </div>
+            <br />
+            <div id="second">
+                <input type="number" id="secondNum">
+            </div>
+            <br>
+            <div id="submit">
+                <button type="submit" id="calculate">Calculate</button>
+            </div>
+        </form>
+        <div id="answerContainer" class="hidden">
+            <h1>The answer is <span id="answer"></span></h1>
+        </div>
+        <!--end of contain div-->
     </div>
-    <script src="new1.js" href="new1.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
