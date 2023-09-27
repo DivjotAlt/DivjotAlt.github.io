@@ -30,6 +30,7 @@ function swapImage() {
     const newSlide = document.createElement('img');
     newSlide.src = myPhotos[currentImage];
     newSlide.className = "fadeinimg";
+    newSlide.height = "500px";
     container.appendChild(newSlide);
 
     if (container.children.length > 1) {
